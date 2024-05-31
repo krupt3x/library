@@ -1,19 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #DDDDDD;
-    color: #222831;
-    font-size: 1rem;
-}
-
-.welcome{
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    font-size: 1.2rem;
-    line-height: 4rem;
-    letter-spacing: 0.01rem;
+body {
+  background-image: url("./assets/images/pexels-pixabay-256453.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: #dddddd; */
+  color: #222831;
+  font-size: 1rem;
 }

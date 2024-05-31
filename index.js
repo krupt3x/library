@@ -17,7 +17,7 @@ function addBookToLibrary() {
     const authorName = "pengy"
     const pages = 33
     const status = "have read."
-    myLibrary.push( new Book(title, authorName, pages, status));
+    myLibrary.push(new Book(title, authorName, pages, status));
 }
 
 function displayBooks(myLibrary) {
@@ -26,5 +26,3 @@ function displayBooks(myLibrary) {
     }
 }
 
-addBookToLibrary();
-displayBooks(myLibrary);
