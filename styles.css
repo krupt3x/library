@@ -1,13 +1,10 @@
-* {
-  margin: 0;
+*{
+  margin: none;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background-image: url("./assets/images/pexels-pixabay-256453.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  /* background-color: #dddddd; */
-  color: #222831;
-  font-size: 1rem;
+
+body{
+  background-color: #35374B;
 }
