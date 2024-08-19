@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #b7c4cf;
+  --primary-font-color: #27374d;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+form {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  height: 60vh;
+  width: 60vw;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
