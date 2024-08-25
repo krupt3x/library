@@ -18,3 +18,12 @@ function addBookToLibrary() {
   myLibrary.push(new Book(title, author, pages, status));
 }
 
+// displays all the books 
+
+function displayBooks(books){
+  books.forEach(book => {
+    console.table(book);
+  });
+}
+addBookToLibrary()
+displayBooks(myLibrary);
