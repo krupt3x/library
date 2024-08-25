@@ -18,15 +18,12 @@ function addBookToLibrary() {
   myLibrary.push(new Book(title, author, pages, status));
 }
 
-const dialog = document.querySelector("dialog");
-const addBook = document.querySelector(".add-book");
-const closeBtn = document.querySelector(".close-btn");
+// displays all the books 
 
-addBook.addEventListener("click", () => {
-  dialog.showModal();
-});
-
-closeBtn.addEventListener("click", () => {
-  dialog.close();
-});
-
+function displayBooks(books){
+  books.forEach(book => {
+    console.table(book);
+  });
+}
+addBookToLibrary()
+displayBooks(myLibrary);
