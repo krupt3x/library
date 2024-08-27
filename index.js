@@ -5,7 +5,7 @@ function Book(title, author, pages, status) {
   this.author = author;
   this.pages = pages;
   this.status = status;
-  this.info = function() {
+  this.info = function () {
     return `${this.title}, by ${this.author}, ${this.pages}, ${this.status}`;
   };
 }
@@ -20,10 +20,25 @@ function addBookToLibrary() {
 
 // displays all the books 
 
-function displayBooks(books){
+function displayBooks(books) {
   books.forEach(book => {
     console.table(book);
   });
 }
-addBookToLibrary()
-displayBooks(myLibrary);
+
+const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+
+
+// opens modal
+openModal.addEventListener("click", () => {
+  modal.show()
+})
+
+// close modal
+
+closeModal.addEventListener("click", () => {
+  modal.close()
+})
+

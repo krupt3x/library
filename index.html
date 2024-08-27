@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +10,30 @@
 </head>
 
 <body>
-
+  <button class=" new-book-btn open-modal">Add Book</button>
+  <dialog class="modal" id="modal">
+    <button class="close-modal">X</button>
+    <div>
+      <p>Add new book</p>
+    </div>
+    <form action="post" method="dialog">
+      <label for="title">Enter the title of the book: </label>
+      <input type="text" name="title" id="title" required /><br />
+      <label for="author">Enter the author's name: </label>
+      <input type="text" name="author" id="author" required /><br />
+      <label for="pages">Enter the number of pages :</label>
+      <input type="number" name="pages" id="pages" min="1" max="4000" /><br />
+      <label id="status">Have you read the book?</label>
+      <label>
+        <input type="radio" name="status" value="yes" checked> Yes
+      </label>
+      <label>
+        <input type="radio" name="status" value="no"> No
+      </label>
+      <br>
+      <button class="submit-btn" type="submit" value="book-info">Submit</button>
+    </form>
+  </dialog>
 </body>
 
 </html>
