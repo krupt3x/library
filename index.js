@@ -1,4 +1,7 @@
+// library to store all books.
 const myLibrary = [];
+
+// constructor for making book objects.
 
 function Book(title, author, pages, status) {
   this.title = title;
@@ -10,6 +13,8 @@ function Book(title, author, pages, status) {
   };
 }
 
+// takes input from the user and stores them in the form of objects inside the library(array).
+
 function addBookToLibrary() {
   let title = prompt("Enter title: ");
   let author = prompt("Author's name: ");
@@ -18,7 +23,7 @@ function addBookToLibrary() {
   myLibrary.push(new Book(title, author, pages, status));
 }
 
-// displays all the books 
+//  displays all the books 
 
 function displayBooks(books) {
   books.forEach(book => {
@@ -27,8 +32,8 @@ function displayBooks(books) {
 }
 
 const modal = document.querySelector('#modal');
-const openModal = document.querySelector('.open-modal');
-const closeModal = document.querySelector('.close-modal');
+const openModal = document.querySelector('#open-modal');
+const closeModal = document.querySelector('#close-modal');
 
 
 // opens modal
